@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --fonteBlackFriday: 'Bebas Neue';
+    --fontDescritivo: 'Baloo 2';
+    --colorBorder: white;
+    --colorBorderW: rgba(255, 255, 255, 0.627);
+    --backgroundColor: rgba(0, 0, 0, 0.907);
+
+}
+
+body{
+    background-color: var(--backgroundColor);
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    min-height: 100vh;
+    min-width: 100vw;
+
+}
+
+/*Div lado esquerdo*/
+.esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.borderBlackFriday{
+    border: 4px solid white ;
+    padding: 10px 50px 10px 50px;
+
+    
+}
+
+.borderBlackFriday h1{
+    font-family: var(--fonteBlackFriday);
+    font-size: 4em;
+    text-align: center;
+    color: white;
+}
+
+.descritivo{
+    text-align: center;
+    color: white;
+    font-family: var(--fontDescritivo);
+}
+
+.descritivo h3{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.descritivo p{
+    font-size: 15px;
+    line-height: 15px;
+}
+/*div lado direito*/
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.borderForm{
+    display: block;
+    height: auto;
+    border: 3px solid var(--colorBorderW);
+
+}
+
+.formulario h2{
+    color: white;
+    font-family: var(--fontDescritivo);
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 300;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin: 30px 30px;
+}
+
+.input-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.infUser{
+    display: inline;
+    font-size: 1.2em;
+    padding: 9px 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid var(--colorBorderW);
+    outline: none;
+    color: white;
+    background-color: rgba(102, 51, 153, 0);
+    
+}
+
+.input-form [type="submit"]{
+    display: inline-block;
+    font-size: 1.2em;
+    font-family: var(--fontDescritivo);
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+@media only screen and (max-width: 500px){
+    .esquerda{
+        display: none;
+        visibility: none;
+    }
+    main{
+        width: 100vw;
+    }
+}
